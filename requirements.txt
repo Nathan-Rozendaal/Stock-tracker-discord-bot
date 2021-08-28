@@ -1,0 +1,12 @@
+python-dotenv
+python-dotenv[cli]
+numpy
+pandas
+simplejson
+millify
+tenacity
+yfinance
+discord.py-message-components
+kaleido
+plotly
+forex-python
