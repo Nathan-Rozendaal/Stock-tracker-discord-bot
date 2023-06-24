@@ -105,7 +105,7 @@ def get_stockData(ticker):
     stockData.cap = millify(get_data_with_fallback(fast_info ,'market_cap', 0), precision=2, drop_nulls=False)
     stockData.profits = millify(get_data_with_fallback(info,"grossProfits", '0'), precision=2, drop_nulls=False)
     stockData.currency = get_data_with_fallback(fast_info,'currency','')
-    stockData.logo = get_data_with_fallback(info ,'logo_url', '')
+    stockData.logo = get_data_with_fallback(fast_info ,'logo_url', '')
     return stockData
 
 def get_graph(data,name):
